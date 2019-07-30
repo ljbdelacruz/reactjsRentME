@@ -10,4 +10,14 @@ export async function getCategoryByID(id, success, err){
         err(error);
     });
 }
+export async function getCategoryByParent(id, success, err){
+    return axios.get('/category/list/all/'+id).then(function(response){
+        success(response.data);
+    }).catch(function (error){
+        err(error);
+    });
+}
+
+
+
 
