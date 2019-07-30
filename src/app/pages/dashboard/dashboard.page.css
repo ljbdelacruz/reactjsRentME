@@ -5,3 +5,8 @@
     font-size: calc(10px + 2vmin);
     color: white;
 }
+.dashboard-ads-container{
+    width:300px !important;
+    height:300px !important;
+    background-color: blue;
+}

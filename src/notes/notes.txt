@@ -17,4 +17,7 @@ npm start web
 axios for networking layer
 https://www.npmjs.com/package/axios
 
+image slider for this project
+https://www.npmjs.com/package/react-slideshow-image
+
 

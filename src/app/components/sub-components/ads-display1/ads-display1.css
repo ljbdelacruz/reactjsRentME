@@ -1,0 +1,9 @@
+.ads-display-image{
+    width:300px !important;
+    height: 200px !important;
+    flex: 1px;
+    z-index: 0;
+}
+.ads-display-container{
+    flex-direction: column;
+}

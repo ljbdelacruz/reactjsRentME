@@ -1,12 +1,10 @@
 
 import React from 'react';
-import Button from '@material-ui/core/Button';
-import TextField from '@material-ui/core/TextField';
 import './dashboard.page.css'
-//#region icons
-import {SearchIcon1} from '../../components/icons/search1/search1.icon'
-//#endregion
 import {Navbar1} from '../../components/sub-components/nav-bar1/nav-bar1.ui'
+import {AdsDisplay1Sub} from '../../components/sub-components/ads-display1/ads-display1.sub'
+
+
 class DashboardPage extends React.Component {
   constructor(props){
       super(props)
@@ -24,6 +22,9 @@ class DashboardPage extends React.Component {
                     }} menuOnClick={()=>{
                         //menu on click
                     }}></Navbar1>
+                    <div className="dashboard-ads-container">
+                        <AdsDisplay1Sub></AdsDisplay1Sub>
+                    </div>
                 </div>
             </div>
         )
