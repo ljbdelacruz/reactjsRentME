@@ -22,8 +22,10 @@ class LoginPage extends React.Component {
             <div>
                 <div className="login-ui-container">
                     <LoginInput1 unamePlaceholder={this.state.username} passPlaceholder={this.state.password} loginOnClick={(data)=>{
-                        console.log(data);
                         //auth here
+                        console.log(data);
+                        //navigate to dashboard if auth success
+                        this.props.history.push('/dashboard');
                     }} ></LoginInput1>
                 </div>
             </div>

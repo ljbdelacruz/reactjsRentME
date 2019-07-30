@@ -1,29 +1,7 @@
 .dashboard-body {
-    background-color: #282c34;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
     font-size: calc(10px + 2vmin);
     color: white;
-}
-.dashboard-container{
-    display: flex;
-    flex-direction: row;
-    width:'80%'
-}
-.my-searchbox{
-  color:white;
-}
-.fab{
-   margin-top: 10px;
-   padding-top: 100px;
-}
-.textField{
-  margin-left: 1px;
-  margin-right: 1px;
-  max-width: 1000px;
-
-}
-.dense{
-  margin-top: 1px;
 }
