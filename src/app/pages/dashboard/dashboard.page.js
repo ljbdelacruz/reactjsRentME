@@ -15,10 +15,10 @@ class DashboardPage extends React.Component {
           selectedCategory:"bottom",
           options:[{ label: "Home", placement:"top", value:"home"}, { label: "Service", placement:"top", value:"service"}],
           ads:[
-              {label:"Home", images:[{source:"http://localhost:8080/assets/images/gmail.png"},
+              {label:"Jojo's Crib", price:"$300", type:"per night", images:[{source:"http://localhost:8080/assets/images/gmail.png"},
                                      {source:"http://localhost:8080/assets/images/gmail.png"}]
               },
-              {label:"Services", images:[{source:"http://localhost:8080/assets/images/gmail.png"},
+              {label:"Mamma Marias PS4 JB sadasdasdasdasdsadasdadsad", price:"$20", type:"per month", images:[{source:"http://localhost:8080/assets/images/gmail.png"},
                                      {source:"http://localhost:8080/assets/images/gmail.png"}]
               },
           ]

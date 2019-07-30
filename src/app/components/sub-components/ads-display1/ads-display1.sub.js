@@ -28,6 +28,7 @@ export class AdsDisplay1Sub extends Component {
                                         }}></ImageSlider1>
                                     </div>
                                     <p className="ads-display1-text">{item.label}</p>
+                                    <p className="ads-display1-price">{item.price} <span className="ads-display1-type">{item.type}</span></p>
                                 </div>)
                             })}
                         </HorizontalScroll>
