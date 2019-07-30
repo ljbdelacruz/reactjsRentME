@@ -13,8 +13,15 @@ class DashboardPage extends React.Component {
           searchbarPlaceholder:'Search Item....',
           category:[],
           selectedCategory:"bottom",
-          options:[{ label: "Home", placement:"top", value:"home"}, { label: "Service", placement:"top", value:"service"}]
-
+          options:[{ label: "Home", placement:"top", value:"home"}, { label: "Service", placement:"top", value:"service"}],
+          ads:[
+              {label:"Home", images:[{source:"http://localhost:8080/assets/images/gmail.png"},
+                                     {source:"http://localhost:8080/assets/images/gmail.png"}]
+              },
+              {label:"Services", images:[{source:"http://localhost:8080/assets/images/gmail.png"},
+                                     {source:"http://localhost:8080/assets/images/gmail.png"}]
+              },
+          ]
       }
       this.fetchCategory();
   }
@@ -35,7 +42,11 @@ class DashboardPage extends React.Component {
 
 
                     <div className="dashboard-ads-container">
-                        <AdsDisplay1Sub></AdsDisplay1Sub>
+                        <AdsDisplay1Sub items={this.state.ads} onClick={(item)=>{
+                            console.log("CLICKED!");
+                            console.log(item);
+                            //view ad items information
+                        }}></AdsDisplay1Sub>
                     </div>
                 </div>
             </div>

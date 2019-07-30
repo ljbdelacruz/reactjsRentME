@@ -23,7 +23,7 @@ export class RadioList1 extends Component {
             }} row>
                 {this.props.items.map(item => {
                     return(<FormControlLabel
-                        className="dashboard-radio-text"
+                        className="radioList-radio-text"
                         value={item.value}
                         control={<Radio color="primary" />}
                         label={item.label}
