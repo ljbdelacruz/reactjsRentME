@@ -1,0 +1,34 @@
+
+
+.container{
+    width:400px !important;
+    height:400px !important;
+    border-radius: 10px;
+    background-color: beige;    
+    margin-top: 10%;
+}
+.sub{
+    
+    height:300px;
+    display: flex;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+.textField{
+      margin-left: 1px;
+      margin-right: 1px;
+      width: 300px;
+      max-width: 1000px;
+      border-color: azure;
+      color:white;
+      flex:1,
+  }
+.dense{
+    margin-top: 3px;
+}
+.login-button{
+    margin-top: 30px !important;
+    width:300px;
+}

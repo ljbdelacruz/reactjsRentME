@@ -1,0 +1,16 @@
+packages used
+
+for routing in pages (did not use yet too complicated)
+https://github.com/swipely/aviator
+
+
+for design
+https://material-ui.com/components/icons/#font-icons
+
+for downloading icons
+https://material.io/resources/icons/?search=search&icon=search&style=round
+
+starts the application 
+npm start web
+
+
