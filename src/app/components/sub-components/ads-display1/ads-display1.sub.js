@@ -20,7 +20,6 @@ export class AdsDisplay1Sub extends Component {
                     <div className="ads-display-container">
                         <div className="ads-display-image">
                             <ImageSlider1 images={this.state.images} onSwipeChange={(oIndex, nIndex)=>{
-                                console.log(oIndex+" "+nIndex);
                             }}></ImageSlider1>
                         </div>
                         <p className="ads-display1-text">Hello World</p>
