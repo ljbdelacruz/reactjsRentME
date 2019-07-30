@@ -2,6 +2,18 @@
     width:300px !important;
     height: 200px !important;
 }
+.ads-display-scontainer{
+    flex-direction: column;
+}
+
 .ads-display-container{
-    flex-direction: row;
+    box-shadow: 5px 5px #777777;
+    border-radius: 10px !important;    
+    flex:1px;
+}
+.ads-display1-text{
+    text-align: center;
+    font-size: 15;
+    margin-top: 60px;
+    color:black;
 }

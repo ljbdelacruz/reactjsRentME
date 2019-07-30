@@ -16,14 +16,25 @@ export class AdsDisplay1Sub extends Component {
     render(){
         return (
             <div>
-                <div className="ads-display-container">
+                <div className="ads-display-scontainer">
+                    <div className="ads-display-container">
+                        <div className="ads-display-image">
+                            <ImageSlider1 images={this.state.images} onSwipeChange={(oIndex, nIndex)=>{
+                                console.log(oIndex+" "+nIndex);
+                            }}></ImageSlider1>
+                        </div>
+                        <p className="ads-display1-text">Hello World</p>
+                    </div>
+                    <div className="ads-display-container">
                     <div className="ads-display-image">
                         <ImageSlider1 images={this.state.images} onSwipeChange={(oIndex, nIndex)=>{
                             console.log(oIndex+" "+nIndex);
                         }}></ImageSlider1>
                     </div>
-                    <p style={{textAlign:"center", fontSize:15, marginTop:60}}>Hello World</p>
+                    <p className="ads-display1-text">Hello World</p>
                 </div>
+                </div>
+
             </div>
         )
     }

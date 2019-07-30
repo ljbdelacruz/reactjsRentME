@@ -11,6 +11,6 @@
     /* background-color: blue; */
     box-shadow: 5px 10px;
     border-color: gray;
-    
     border-radius: 20px;
+    border-color: black !important;
 }
