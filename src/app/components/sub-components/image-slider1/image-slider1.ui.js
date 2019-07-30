@@ -19,16 +19,19 @@ export class ImageSlider1 extends Component {
     render(){
         return(
         <div >
-            <div className="image-slider1-container">
+            <div >
+                <div className="image-slider1-container">
+
                 <Slide {...this.properties}>
                     {this.props.images.map(image => {
                             return (
                                 <div className="each-slide">
-                                    <img src={image.source} style={{width:"100%", height:"100%"}}/>
+                                    <img src={image.source} style={{width:300, height:200}}/>
                                 </div>
                             );
                     })}
                 </Slide>
+                </div>
             </div>
         </div>
         )

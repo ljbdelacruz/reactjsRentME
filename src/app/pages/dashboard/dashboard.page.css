@@ -8,5 +8,9 @@
 .dashboard-ads-container{
     width:300px !important;
     height:300px !important;
-    background-color: blue;
+    /* background-color: blue; */
+    box-shadow: 5px 10px;
+    border-color: gray;
+    
+    border-radius: 20px;
 }

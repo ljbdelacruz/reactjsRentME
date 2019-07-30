@@ -22,7 +22,7 @@ export class AdsDisplay1Sub extends Component {
                             console.log(oIndex+" "+nIndex);
                         }}></ImageSlider1>
                     </div>
-                    <h4 style={{textAlign:"center"}}>Hello World</h4>
+                    <p style={{textAlign:"center", fontSize:15, marginTop:60}}>Hello World</p>
                 </div>
             </div>
         )
