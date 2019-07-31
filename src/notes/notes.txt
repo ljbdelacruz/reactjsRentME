@@ -22,3 +22,11 @@ https://www.npmjs.com/package/react-slideshow-image
 
 horizontal scrolling packages
 https://www.npmjs.com/package/react-scroll-horizontal
+
+
+
+core data tutorial
+https://www.youtube.com/watch?v=PMze4tT2w_U
+
+realm tutorial
+https://www.youtube.com/watch?v=PmsJW59rNY8

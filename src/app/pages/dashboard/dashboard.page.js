@@ -9,6 +9,7 @@ import {RadioList1} from '../../components/radioButtons/radioList1/radioList1.ui
 //#endregion
 //#region models
 var cmodel=require('../../viewModel/rentme/category.vm')
+var amodel=require('../../viewModel/rentme/ads.vm')
 //#endregion
 
 
@@ -64,7 +65,6 @@ class DashboardPage extends React.Component {
     fetchCategory(){
         getCategoryByParent(0,function(data){
           this.setState({category:data});
-          
           for(var i=0;i<data.length; i++){
               var temp=new cmodel();
               temp.toParam(data[i].id, data[i].name, "top", data[i].name)
@@ -72,12 +72,13 @@ class DashboardPage extends React.Component {
                 options:this.state.options.concat(temp)
               })
           }
-
-
         }.bind(this), function(err){
             console.log("ERROR!");
             // this.fetchCategory();
         }.bind(this))
+    }
+    fetchAds(){
+        
     }
 }
 export default DashboardPage
