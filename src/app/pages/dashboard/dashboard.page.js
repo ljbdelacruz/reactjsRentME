@@ -1,10 +1,16 @@
 
+//#region modules
 import React from 'react';
 import './dashboard.page.css'
 import {Navbar1} from '../../components/sub-components/nav-bar1/nav-bar1.ui'
 import {AdsDisplay1Sub} from '../../components/sub-components/ads-display1/ads-display1.sub'
 import {getCategoryByParent} from '../../services/api.service'
 import {RadioList1} from '../../components/radioButtons/radioList1/radioList1.ui'
+//#endregion
+//#region models
+var cmodel=require('../../viewModel/rentme/category.vm')
+//#endregion
+
 
 class DashboardPage extends React.Component {
   constructor(props){
@@ -13,7 +19,8 @@ class DashboardPage extends React.Component {
           searchbarPlaceholder:'Search Item....',
           category:[],
           selectedCategory:"bottom",
-          options:[{ label: "Home", placement:"top", value:"home"}, { label: "Service", placement:"top", value:"service"}],
+        //   options:[{ label: "Home", placement:"top", value:"home"}, { label: "Service", placement:"top", value:"service"}],
+          options:[],
           ads:[
               {label:"Jojo's Crib", price:"$300", type:"per night", images:[{source:"http://localhost:8080/assets/images/gmail.png"},
                                      {source:"http://localhost:8080/assets/images/gmail.png"}]
@@ -31,6 +38,7 @@ class DashboardPage extends React.Component {
                 <div>
                     <Navbar1 placeholder={this.state.searchbarPlaceholder} searchOnClick={(data)=>{
                         console.log(data);
+
                         //search on click
                     }} menuOnClick={()=>{
                         //menu on click
@@ -56,6 +64,16 @@ class DashboardPage extends React.Component {
     fetchCategory(){
         getCategoryByParent(0,function(data){
           this.setState({category:data});
+          
+          for(var i=0;i<data.length; i++){
+              var temp=new cmodel();
+              temp.toParam(data[i].id, data[i].name, "top", data[i].name)
+              this.setState({
+                options:this.state.options.concat(temp)
+              })
+          }
+
+
         }.bind(this), function(err){
             console.log("ERROR!");
             // this.fetchCategory();
