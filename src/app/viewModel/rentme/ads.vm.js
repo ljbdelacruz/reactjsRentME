@@ -4,13 +4,11 @@ class AdsVM{
     stringify(){
         return JSON.stringify(this);
     }
-    toParam(id, price, type, images, title){
+    toParam(id, price, type, images){
         this.id=id;
         this.price=price;
         this.type=type;
         this.images=images;
-        this.title=title;
-        this.description=this.description;
     }
     toParam2(id, title, description, price, currencyCode, ownerID, categoryID, priority, longitude, latitude, unitIdentifier, rentedByUserID, rentedAt, returnDate, available){
         this.id=id;
@@ -32,7 +30,6 @@ class AdsVM{
 }
 class ImagesVM{
     constructor(){
-
     }
     stringify(){
         return JSON.stringify(this);
@@ -40,6 +37,14 @@ class ImagesVM{
     toParam(id, source){
         this.id=id;
         this.source=source;
+    }
+    toParam2(id, source, adsID, UID, UID2){
+        this.id=id;
+        this.source=source;
+        this.adsID=adsID;
+        this.UID=UID;
+        this.UID2=UID2;
+
     }
 }
 
