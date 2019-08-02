@@ -51,13 +51,13 @@ class DashboardPage extends React.Component {
                             //view ad items information
                         }}></AdsDisplay1Sub>
                     </div>
-                    <h5 style={{color:"black"}}>Gadgets</h5>
+                    <h5 style={{color:"black"}}>Computers &amp; Gadets</h5>
                     <div className="dashboard-ads-container">
                         <AdsDisplay1Sub items={this.state.ads} onClick={(item)=>{
                             //view ad items information
                         }}></AdsDisplay1Sub>
                     </div>
-                    <h5 style={{color:"black"}}>Services</h5>
+                    <h5 style={{color:"black"}}>Services Offered</h5>
                     <div className="dashboard-ads-container">
                         <AdsDisplay1Sub items={this.state.ads} onClick={(item)=>{
                             //view ad items information
