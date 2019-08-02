@@ -20,3 +20,14 @@
  .navbar1-searchbutton{
   margin-left: 3px !important;
  }
+
+
+navbar1-root{
+  position: 'relative'
+}
+navbar1-paper{
+  position: absolute;
+  top:36px;
+  right: 0;
+  left: 0;
+}

@@ -6,10 +6,24 @@ class AdsVM{
     }
     toParam(id, label, price, type, images){
         this.id=id;
-        this.value=value;
-        this.placement=placement;
-        this.label=label;
+        this.price=price;
+        this.type=type;
+        this.images=images;
     }
 }
-module.exports=AdsVM;
+class ImagesVM{
+    constructor(){
+
+    }
+    stringify(){
+        return JSON.stringify(this);
+    }
+    toParam(id, source){
+        this.id=id;
+        this.source=source;
+    }
+}
+
+
+module.exports={AdsVM, ImagesVM};
 
