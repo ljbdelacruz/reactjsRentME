@@ -24,9 +24,9 @@ horizontal scrolling packages
 https://www.npmjs.com/package/react-scroll-horizontal
 
 
+design packages
 
-core data tutorial
-https://www.youtube.com/watch?v=PMze4tT2w_U
 
-realm tutorial
-https://www.youtube.com/watch?v=PmsJW59rNY8
+imageviewer
+https://reactnativeexample.com/modal-view-component-to-view-images-with-zoom/
+
