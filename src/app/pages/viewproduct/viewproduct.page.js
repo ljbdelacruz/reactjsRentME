@@ -13,8 +13,10 @@ class ViewProductPage extends React.Component {
           return (
             <div>
               <ImageSlider1 images={this.itemInfo.images} onSwipeChange={(oIndex, nIndex)=>{
-                                
+                
               }}></ImageSlider1>
+              <p>{this.state.itemInfo.name}</p>
+
             </div>
           )
     }
