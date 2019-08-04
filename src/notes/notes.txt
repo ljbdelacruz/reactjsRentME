@@ -33,3 +33,14 @@ https://reactnativeexample.com/modal-view-component-to-view-images-with-zoom/
 
 ui source
 https://reactnativeexample.com/tag/images/
+
+
+ui reference design
+https://dribbble.com/shots/6592690-Food-Delivery-Dashboard
+
+color palette
+https://www.color-hex.com/color-palette/81470
+
+
+react flex
+https://www.npmjs.com/package/react-flex

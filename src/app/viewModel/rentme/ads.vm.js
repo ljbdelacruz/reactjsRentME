@@ -44,7 +44,6 @@ class ImagesVM{
         this.adsID=adsID;
         this.UID=UID;
         this.UID2=UID2;
-
     }
 }
 

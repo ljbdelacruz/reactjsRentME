@@ -12,7 +12,6 @@ var cmodel=require('../../viewModel/rentme/category.vm')
 var amodel=require('../../viewModel/rentme/ads.vm')
 //#endregion
 
-
 class DashboardPage extends React.Component {
   constructor(props){
       super(props)
@@ -34,37 +33,38 @@ class DashboardPage extends React.Component {
   }
     render(){
         return (
-            <div className="dashboard-body">
-                <div>
-                    <Navbar1 placeholder={this.state.searchbarPlaceholder} searchOnClick={(data)=>{
-                        console.log(data);
-                        //search on click
-                    }} menuOnClick={()=>{
-                        //menu on click
-                    }}></Navbar1>
-                    <RadioList1 items={this.state.options} onSelected={(value)=>{
-                        console.log(value);
-                    }}></RadioList1>
-                    <h5 style={{color:"black"}}>Vehicles</h5>
-                    <div className="dashboard-ads-container">
-                        <AdsDisplay1Sub items={this.state.ads} onClick={(item)=>{
-                            //view ad items information
-                            
-                        }}></AdsDisplay1Sub>
+            <div>
+                    <div className="dashboard-body">
+                        <div>
+                            <Navbar1 placeholder={this.state.searchbarPlaceholder} searchOnClick={(data)=>{
+                                //search on click
+                            }} menuOnClick={()=>{
+                                //menu on click
+                            }}></Navbar1>
+                            <RadioList1 items={this.state.options} onSelected={(value)=>{
+                                console.log(value);
+                            }}></RadioList1>
+                            <h5 style={{color:"black"}}>Vehicles</h5>
+                            <div className="dashboard-ads-container">
+                                <AdsDisplay1Sub items={this.state.ads} onClick={(item)=>{
+                                    //view ad items information
+                                }}></AdsDisplay1Sub>
+                            </div>
+                            <h5 style={{color:"black"}}>Computers &amp; Gadets</h5>
+                            <div className="dashboard-ads-container">
+                                <AdsDisplay1Sub items={this.state.ads} onClick={(item)=>{
+                                    //view ad items information
+                                }}></AdsDisplay1Sub>
+                            </div>
+                            <h5 style={{color:"black"}}>Services Offered</h5>
+                            <div className="dashboard-ads-container">
+                                <AdsDisplay1Sub items={this.state.ads} onClick={(item)=>{
+                                    //view ad items information
+                                }}></AdsDisplay1Sub>
+                            </div>
+                        </div>
                     </div>
-                    <h5 style={{color:"black"}}>Computers &amp; Gadets</h5>
-                    <div className="dashboard-ads-container">
-                        <AdsDisplay1Sub items={this.state.ads} onClick={(item)=>{
-                            //view ad items information
-                        }}></AdsDisplay1Sub>
-                    </div>
-                    <h5 style={{color:"black"}}>Services Offered</h5>
-                    <div className="dashboard-ads-container">
-                        <AdsDisplay1Sub items={this.state.ads} onClick={(item)=>{
-                            //view ad items information
-                        }}></AdsDisplay1Sub>
-                    </div>
-                </div>
+
             </div>
         )
     }
