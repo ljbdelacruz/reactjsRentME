@@ -23,12 +23,13 @@ export class AdsDisplay1Sub extends Component {
                                 <div className="ads-display-container" onClick={()=>{
                                     this.props.onClick(item);
                                 }}>
+                                    <p className="ads-display1-price">{item.price} <span className="ads-display1-type">{item.type}</span></p>
                                     <div className="ads-display-image">
                                         <ImageSlider1 images={item.images} onSwipeChange={(oIndex, nIndex)=>{
                                         }}></ImageSlider1>
                                     </div>
                                     <p className="ads-display1-text">{item.label}</p>
-                                    <p className="ads-display1-price">{item.price} <span className="ads-display1-type">{item.type}</span></p>
+                                    {/* <p className="ads-display1-price">{item.price} <span className="ads-display1-type">{item.type}</span></p> */}
                                 </div>)
                             })}
                         </HorizontalScroll>

@@ -27,5 +27,20 @@ export async function getCategoryByParent(id, success, err){
 
 //#endregion
 
-
+//#region images
+export async function getImageByUID(uid, uid2, success, err){
+    return axios.get("/adsimage/uid/"+uid+"/"+uid2).then(function(response){
+        success(response.data);
+    }).catch(function (error){
+        err(error);
+    });
+}
+export async function newImage(param, success, err){
+    return axios.post('/adsimage/new', param).then(function(response){
+        success(response.data);
+    }).catch(function (error){
+        err(error);
+    });
+}
+//#endregion
 

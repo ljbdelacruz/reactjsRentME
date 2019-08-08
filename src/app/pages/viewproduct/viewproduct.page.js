@@ -1,20 +1,24 @@
-
 import React from 'react';
-import Button from '@material-ui/core/Button';
-
+import './viewproduct.page.css'
+import {ImageSlider1} from '../../components/sub-components/image-slider1/image-slider1.ui'
 
 class ViewProductPage extends React.Component {
     constructor(props){
         super(props)
         this.state={
+          itemInfo:{}
         }
     }
     render(){
           return (
             <div>
-                <p>View Product Info</p>
+              <ImageSlider1 images={this.itemInfo.images} onSwipeChange={(oIndex, nIndex)=>{
+                
+              }}></ImageSlider1>
+              <p>{this.state.itemInfo.name}</p>
+
             </div>
           )
     }
-}
-export default ViewProductPage
+  }
+  export default ViewProductPage
